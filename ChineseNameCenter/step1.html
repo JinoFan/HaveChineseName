@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>在线中文起名系统</title>
+	<style>
+	 body {background-image: url("111.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+}
+</style>
+</head>
+<body>
+	<body background="111.jpg">
+    <form action="/cgi-bin/result.cgi" method="post" >
+		<h1>请填写以下信息：</h1>
+        <h3>你的姓名：<input type="text" name="name" /></h3>
+		<h3>性别：
+			<input type="radio" name="gender" value="male"/>男
+			<input type="radio" name="gender" value="female"/>女</h3>
+		<h3>出生日期：
+			<input type="text" name="year" />年
+			<input type="text" name="month" />月
+			<input type="text" name="date" />日
+			<input type="text" name="hour" />时</h3>
+		<h3>希望给自己起一个什么样的名字？</h3>
+			<input type="radio" name="style" value="transliterated">音译名
+			<input type="radio" name="style" value="artistic">艺术名
+			<input type="radio" name="style" value="thoeretical">周易排八字起名
+        <input type="submit" value="确认" />
+    </form>    
+</body>
+</html>
